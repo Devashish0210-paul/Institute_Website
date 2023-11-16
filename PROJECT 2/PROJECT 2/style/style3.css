@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background:#f5f8ff; */
+}
+
+.faqcontainer {
+  margin: 0 40px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faqcontainer .faq-heading {
+  text-align: center;
+}
+
+.faqcontainer .faq-heading h3 {
+  padding: 25px 0;
+  color: #1eb2a6;
+}
+
+.faqcontainer .faq-heading h1 {
+  font-size: 45px;
+  padding-bottom: 25px;
+}
+
+.faqcontainer .faq-Question {
+  position: relative;
+  background: #fff;
+  padding: 0 30px 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faqcontainer .faq-Question input {
+  appearance: none;
+}
+
+.faqcontainer .faq-Question label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.faqcontainer .faq-Question label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+
+.faqcontainer .faq-Question:hover label::after {
+  color: #333;
+}
+
+.faqcontainer .faq-Question input:checked ~ label::after {
+  transform: rotate(135deg);
+  color: white;
+}
+
+.faqcontainer .faq-Question label h2 {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.faqcontainer .faq-Question input:checked ~ label h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 8rem;
+  justify-content: flex-end;
+}
+
+.faqcontainer .faq-Question:nth-child(2) label h2 {
+  background: linear-gradient(135deg, #70f570, #49c628);
+}
+
+.faqcontainer .faq-Question:nth-child(3) label h2 {
+  background: linear-gradient(135deg, #3c8ce7, #00eaff);
+}
+
+.faqcontainer .faq-Question:nth-child(4) label h2 {
+  background: linear-gradient(135deg, #ff96f9, #c32bac);
+}
+
+.faqcontainer .faq-Question:nth-child(5) label h2 {
+  background: linear-gradient(135deg, #70f570, #49c628);
+}
+
+.faqcontainer .faq-Question:nth-child(6) label h2 {
+  background: linear-gradient(135deg, #3c8ce7, #00eaff);
+}
+
+.faqcontainer .faq-Question:nth-child(7) label h2 {
+  background: linear-gradient(135deg, #ff96f9, #c32bac);
+}
+
+.faqcontainer .faq-Question label h3 {
+  width: 100%;
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  z-index: 10;
+  margin-right: 12px;
+}
+
+.faqcontainer .faq-Question input:checked ~ label h3 {
+  background-color: #fff;
+  padding: 2px 10px;
+  color: #333;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.faqcontainer .faq-Question .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faqcontainer .faq-Question input:checked ~ .faq-answer {
+  transition: 2s;
+  max-height: 100vh;
+}
+
+.faqcontainer .faq-Question .faq-answer p {
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+}
+
+.faqcontainer .faq-Question input:checked ~ .faq-answer p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 10px rgb(73, 71, 71);
+}

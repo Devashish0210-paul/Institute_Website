@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.team {
+  width: 100%;
+  height: 1200px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  gap: 40px;
+}
+
+.cards-team-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-team {
+  width: 270px;
+  height: 500px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+.team-img-1 {
+  width: 270px;
+  height: 350px;
+  background-image: url("/images/IMG-20231109-WA0003.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.team-img-2 {
+  width: 270px;
+  height: 350px;
+  background-image: url("/images/IMG-20231109-WA0004.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.team-img-3 {
+  width: 270px;
+  height: 350px;
+  background-image: url("/images/IMG-20231109-WA0005.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.team-img-4 {
+  width: 270px;
+  height: 350px;
+  background-image: url("/images/IMG-20231109-WA0006.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.team-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 120px 0 20px 20px;
+  opacity: 0;
+}
+.fb,
+.twitter,
+.insta,
+.tiktok {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  background-color: black;
+}
+.team-icons i {
+  font-size: 1rem;
+  color: white;
+}
+
+.team-texts {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 20px;
+}
+.team-texts p {
+  font-size: 1rem;
+  color: gray;
+}
+.card-team:hover .team-icons {
+  opacity: 1;
+  transition: 1s;
+}
+
+.card-team:hover {
+  background-color: #20b1a6;
+  transition: 1s;
+}
+
+.card-team:hover .team-texts p {
+  color: white;
+}
+
+.card-team:hover .team-texts h3 {
+  color: white;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1300px) {
+  .team {
+    height: 2200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team {
+    height: 4300px;
+  }
+}
